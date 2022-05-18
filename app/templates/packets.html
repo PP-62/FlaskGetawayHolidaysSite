@@ -1,0 +1,25 @@
+{% import 'macros.html' as m %}
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+<div class="packetsCardContainer">
+    {% for card in cards %}
+        {{ m.сard(card) }}
+    {% endfor %}
+</div>
+<div class="individualCardContainer">
+    <div class="individualCard">
+        <div class="individualCardTitle">{{content["extraPacketTitle"]}}</div>
+        <div class="individualCardContent">
+            {% for row in content["extraPacketContent"] %}
+                    {{row}}
+                    <br/><br/>
+                {% endfor %}
+        </div>
+        <div class="individualCardButton">
+            <a href="{{'form?item='+content['extraPacketTitle']}}">{{content["extraPacketButton"]}}</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

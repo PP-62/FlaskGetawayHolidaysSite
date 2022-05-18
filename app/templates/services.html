@@ -1,0 +1,11 @@
+{% import 'macros.html' as m %}
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+<div class="servicesCardContainer">
+    {% for card in cards %}
+        {{ m.wideCard(card) }}
+    {% endfor %}
+</div>
+{% endblock %}

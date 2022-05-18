@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+   <div class="companyName">{{content["title"]}}</div>
+   <div class="helloMessage">{{content["content"]}}</div>
+   <div class="packetName">{{content["packetName"]}}</div>
+   <div class="cardContainer">
+      {% for card in packetCards %}
+         {{ m.smallCard(card, "/"+currentLang+"/packets", "#ff005e", "#ffffff") }}
+      {% endfor %}
+      </div>
+   <div class="packetName">{{content["serviceName"]}}</div>
+   <div class="cardContainer">
+      {% for card in serviceCards %}
+         {{ m.smallCard(card, "/"+currentLang+"/services", "#85ff00", "#000") }}
+      {% endfor %}
+      </div>
+{% endblock %}

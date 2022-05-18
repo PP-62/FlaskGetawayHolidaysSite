@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+    <div class="about">
+        <div class="aboutTitle">{{content["title"]}}</div>
+        <div class="aboutContent">
+            {% for row in content["content"] %}
+                {{row}}
+            <br/><br/>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,290 @@
+{
+    "en":{
+        "nav":{
+            "index":"main",
+            "services":"services",
+            "packets":"packets",
+            "about":"about"
+        },
+        "packetCards": {
+            "basePacket":{
+                "title":"Base packet",
+                "smallContent":"1 day",
+                "content":[
+                    "daily morning snacks (hot drinks and snacks)",
+                    "5 dinners served at the restaurant on site",
+                    "5 spa treatments for 1 hour",
+                    "free lift pass for 1 week"
+                    ],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"basePacket",
+                "requestButtonText":"buy",
+                "buttonText":"buttonText"
+            },
+            "standartPacket":{
+                "title":"Standart packet",
+                "smallContent":"3 days",
+                "content":[
+                    "daily morning snacks (hot drinks and snacks)",
+                    "5 dinners served at the restaurant on site",
+                    "5 spa treatments for 1 hour",
+                    "free lift pass for 1 week"
+                    ],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"standartPacket",
+                "requestButtonText":"buy",
+                "buttonText":"buttonText"
+            },
+            "LuxPacket":{
+                "title":"Lux packet",
+                "smallContent":"1 week",
+                "content":[
+                    "daily morning snacks (hot drinks and snacks)",
+                    "5 dinners served at the restaurant on site",
+                    "5 spa treatments for 1 hour",
+                    "free lift pass for 1 week"
+                    ],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"LuxPacket",
+                "requestButtonText":"buy",
+                "buttonText":"buttonText"
+            }
+        },
+        "serviceCards": {
+            "Service1":{
+                "title":"title",
+                "smallContent":"small content",
+                "content":["content"],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"buttonAction",
+                "requestButtonText":"buy",
+                "buttonText":"buttonText"
+            },
+            "Service2":{
+                "title":"title",
+                "smallContent":"small content",
+                "content":["content"],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"buttonAction",
+                "requestButtonText":"buy",
+                "buttonText":"buttonText"
+            },
+            "Service3":{
+                "title":"title",
+                "smallContent":"small content",
+                "content":["content"],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"buttonAction",
+                "requestButtonText":"buy",
+                "buttonText":"buttonText"
+            },
+            "Service4":{
+                "title":"title",
+                "smallContent":"small content",
+                "content":["content"],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"buttonAction",
+                "requestButtonText":"buy",
+                "buttonText":"buttonText"
+            }
+        },
+        "pageAbout":{
+            "pageName":"about",
+            "title":"About",
+            "content":[
+                "Getaway Holidays is a company that offers ski holidays.",
+                "Here, the activities of the company can be described in more detail.",
+                "contact phone: 1-111-111-11-11",
+                "email: address@email.com"
+                ]
+        },
+        "pageMain":{
+            "pageName":"index",
+            "title":"Getaway Holidays",
+            "content":"Getaway Holidays - about",
+            "packetName":"packets",
+            "serviceName":"services"
+        },
+        "pageServices":{
+            "pageName":"services",
+            "title":"Services"
+        },
+        "pagePackets":{
+            "pageName":"packets",
+            "title":"Packets",
+            "extraPacketTitle":"Individual Packet",
+            "extraPacketContent":[
+                "May include:",
+                "group lessons",
+                "Après Ski Classes",
+                "nursery services"
+            ],
+            "extraPacketButton": "Go to checkout"
+        },
+        "pageForm":{
+            "pageName":"form",
+            "title":"form",
+            "formTitle":"Checkout",
+            "content":[
+                "Order Information"
+                ],
+            "formMustFields":{
+                "product":"service/package",
+                "email":"email",
+                "name":"name",
+                "phone":"telephone"
+                },
+            "formAdditionFields":{
+                "more":"Additionally"
+            }
+        },
+        "footer":{
+            "content":"content"
+        }
+    },
+    
+    "ru":{
+        "nav":{
+            "index":"Главная",
+            "services":"услуги",
+            "packets":"пакеты",
+            "about":"о нас"
+        },
+        "packetCards": {
+            "basePacket":{
+                "title":"Базовый пакет",
+                "smallContent":"на 1 день",
+                "content":[
+                    "1 утренний перекус (горячий напиток и закуска)",
+                    "1 ужин, подается в ресторане на территории отеля",
+                    "1 х 1 час санаторно-курортных процедур",
+                    "бесплатный пропуск на подъемник на 1 день"
+                    ],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"basePacket",
+                "requestButtonText":"заказать",
+                "buttonText":"подробнее"
+            },
+            "standartPacket":{
+                "title":"Стандартный пакет",
+                "smallContent":"на 3 дня",
+                "content":[
+                    "3 утренних прохладительных напитка (горячие напитки и закуски)",
+                    "3 ужина, подаются в ресторане на территории отеля",
+                    "3 спа-процедуры по 1 часу",
+                    "бесплатный пропуск на подъемник на 3 дня"
+                    ],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"standartPacket",
+                "requestButtonText":"заказать",
+                "buttonText":"подробнее"
+            },
+            "LuxPacket":{
+                "title":"Пакет Люкс",
+                "smallContent":"на неделю",
+                "content":[
+                    "ежедневные утренние закуски (горячие напитки и закуски)",
+                    "5 ужинов, которые подаются в ресторане на территории отеля",
+                    "5 спа-процедур по 1 часу",
+                    "бесплатный абонемент на подъемник на 1 неделю"
+                    ],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"LuxPacket",
+                "requestButtonText":"заказать",
+                "buttonText":"подробнее"
+            }
+        },
+        "serviceCards": {
+            "service1":{
+                "title":"название сервиса 1",
+                "smallContent":"содержание",
+                "content":["описание"],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"buttonAction",
+                "requestButtonText":"перейти к офопмлению",
+                "buttonText":"подробнее"
+            },
+            "service2":{
+                "title":"название сервиса 2",
+                "smallContent":"содержание",
+                "content":["описание"],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"buttonAction",
+                "requestButtonText":"перейти к офопмлению",
+                "buttonText":"подробнее"
+            },
+            "service3":{
+                "title":"название сервиса 3",
+                "smallContent":"содержание",
+                "content":["описание"],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"buttonAction",
+                "requestButtonText":"перейти к офопмлению",
+                "buttonText":"подробнее"
+            },
+            "service4":{
+                "title":"название сервиса 4",
+                "smallContent":"содержание",
+                "content":["описание"],
+                "imgUrl":"cardExample.jpg",
+                "buttonAction":"buttonAction",
+                "requestButtonText":"перейти к офопмлению",
+                "buttonText":"подробнее"
+            }
+        },
+        "pageAbout":{
+            "pageName":"about",
+            "title":"О нас",
+            "content":[
+                "Getaway Holidays - это компания, которая предлагает отдых на лыжах.",
+                "Здесь может быть более подробно описана деятельность компании.",
+                "контактный телефон: 1-111-111-11-11",
+                "email: address@email.com "
+                ]
+        },
+        "pageMain":{
+            "pageName":"index",
+            "title":"Getaway Holidays",
+            "content":"Getaway Holidays - это компания, которая предлагает отдых на лыжах.",
+            "packetName":"Праздничные пакеты",
+            "serviceName":"Услуги"
+        },
+        "pageServices":{
+            "pageName":"services",
+            "title":"Услуги"
+        },
+        "pagePackets":{
+            "pageName":"packets",
+            "title":"Пакеты",
+            "extraPacketTitle":"Индивидуальный пакет",
+            "extraPacketContent":[
+                "Может включать:",
+                "групповые занятия",
+                "занятия на апре-ски",
+                "услуги яслей"
+            ],
+            "extraPacketButton":"Перейти к оформлению"
+
+        },
+        "pageForm":{
+            "pageName":"form",
+            "title":"форма",
+            "formTitle":"Оформление заказа",
+            "content":[
+                "Информация об оформлении заказа"
+                ],
+            "formMustFields":{
+                "product":"услуга/пакет",
+                "email":"email",
+                "name":"имя",
+                "phone":"телефон"
+                },
+            "formAdditionFields":{
+                "more":"Дополнительно"
+            }
+        },
+        "footer":{
+            "content":"контент"
+        }
+    }
+}

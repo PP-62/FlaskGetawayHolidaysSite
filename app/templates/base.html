@@ -1,0 +1,47 @@
+{% import 'macros.html' as m %}
+<!doctype html>
+<html>
+<head>
+  {% block header %}
+  {% endblock %}
+   <title>{{content["title"]}}</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="..\static\style.css">
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="logo">
+            <img src="..\static\logo.png" alt="logo">
+
+        </div>
+        {{ m.navmenu(nav, currentLang) }}
+        <div class="headerContact">
+            <p>
+            1-111-111-11-11<br>
+            address@email.com
+            </p>
+        </div>
+        {{ m.languageSelector(languages, currentLang, content["pageName"]) }}
+    </div>
+    <!-- <h1>{{content["title"]}}</h1> -->
+    <div class="contentMain">
+    {% block content %}
+    {% endblock %}
+    </div>
+    <div class="footer">
+        <p>{{ footer["content"] }}</p>
+        <div class="footerContact">
+            <p>
+            1-111-111-11-11
+            address@email.com
+            </p>
+        </div>
+        <a href="http://vk.com" class="socialLink">
+            <img src="..\static\VK-chb_t.png">
+        </a>
+    </div>
+</div>
+    
+</body>
+</html>

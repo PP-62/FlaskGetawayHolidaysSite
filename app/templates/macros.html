@@ -1,0 +1,70 @@
+{% macro navmenu(nav, currentLang) %}
+    <ul class="navigation">
+        {% for link in nav %}
+        <li class="navElement">
+        <a class="navLink" href={{"/"+currentLang+"/"+link.route}}>{{link.name}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+{% macro smallCard(card, page, colorbg, color) %}
+    <div class="smallCard">
+        <!-- <img src={{smallCard.imgUrl}}> -->
+        <div class="cardimg" style="background-image: url(../static/{{card.imgUrl}})">
+            <div class="smallCardTitle">{{card.title}}</div>
+        </div>
+        <!-- <div class="smallCardContent">{{smallCard.smallContent}}</div> -->
+        <a class="smallCardBtn" href="{{page}}" style="background-color:{{colorbg}}; color: {{color}};">{{card.buttonText}}</a>
+    </div>
+{% endmacro %}
+
+{% macro сard(сard) %}
+    <div class="verticalCard">
+        <!-- <img src={{smallCard.imgUrl}}> -->
+        <div class="cardimg" style="background-image: url(../static/{{сard.imgUrl}})">
+            <div class="verticalCardTitle">{{сard.title}}</div>
+        </div>
+        <div class="verticalCardContent">
+            {% for row in сard.content %}
+                    {{row}}
+                    <br/><br/>
+                {% endfor %}
+        </div>
+        <div class="verticalCardButton">
+            <a href="{{'form?item='+сard.title}}">{{сard.requestButtonText}}</a>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro wideCard(сard) %}
+    <div class="wideCard">
+        <!-- <img src={{smallCard.imgUrl}}> -->
+        <div class="cardimg" style="background-image: url(../static/{{сard.imgUrl}})">
+            
+        </div>
+        <div class="wideCardInner">
+            <div class="wideCardTitle">{{сard.title}}</div>
+            <div class="wideCardContent">
+                {% for row in сard.content %}
+                    {{row}}
+                    <br/><br/>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="wideCardButton">
+            <a href="{{'form?item='+сard.title}}">{{сard.requestButtonText}}</a>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro languageSelector(languages, currentLang, pageName) %}
+    <div class="dropdown">
+        <div class="dropbtn">{{currentLang}}</div>
+        <div class="dropdownContent">
+            {% for language in languages %}
+                <a href="{{'/'+language+'/'+pageName}}">{{language}}</a>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

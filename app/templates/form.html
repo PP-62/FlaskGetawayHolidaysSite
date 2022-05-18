@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block header %}
+{% endblock %}
+{% block content %}
+    <div class="form">
+        <div>
+        <div class="formTitle">{{content["title"]}}</div>
+        <form method="post" action = "">
+
+            <div class="formRow">
+                <label class="formParamName" for={{index}}>{{fieldsList[0][1]}}</label>
+                <select name="items">
+                    {% for item in productList %}
+                        <OPTION class="formOption" value={{item.replace(' ', '_')}}
+                        {% if item == preSelect %}
+                            selected
+                        {% endif %}
+                        >{{item}}</option>
+                    {% endfor %}
+                </select>
+                {% if formOk[index] %}
+                    <div class="error"></div> 
+                {% endif %}
+            </div>
+
+            {% for (index, name) in fieldsList[1:] %}
+                <div class="formRow">
+                    
+                    <label class="formParamName" for={{index}}>{{name}}</label>
+                    <input type="text" name="{{index}}">
+                    {% if formOk[index] %}
+                        <div class="error"></div> 
+                    {% endif %}
+                </div>
+            {% endfor %}
+            <div class="submitForm">
+                <input type="submit">
+            </div>
+        </form>
+        </div>
+        <div class="formContent">
+            {% for row in content["content"] %}
+                {{row}}
+            <br/><br/>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}
